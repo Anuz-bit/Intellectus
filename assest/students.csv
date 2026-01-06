@@ -1,0 +1,11 @@
+student_id,full_name,course,semester,guardian_name,guardian_email
+S101,Aarav Sharma,Computer Science,5,Rajesh Sharma,r.sharma@example.com
+S102,Priya Patel,Mechanical Engineering,3,Meena Patel,m.patel@example.com
+S103,Rohan Mehta,Electrical Engineering,5,Sunil Mehta,s.mehta@example.com
+S104,Anika Gupta,Computer Science,7,Alok Gupta,a.gupta@example.com
+S105,Vikram Singh,Civil Engineering,3,Pooja Singh,p.singh@example.com
+S106,Isha Reddy,Computer Science,5,Anand Reddy,a.reddy@example.com
+S107,Sameer Ali,Mechanical Engineering,7,Fatima Ali,f.ali@example.com
+S108,Neha Joshi,Electrical Engineering,3,Girish Joshi,g.joshi@example.com
+S109,Aditya Kumar,Civil Engineering,5,Sanjay Kumar,s.kumar@example.com
+S110,Sanya Verma,Computer Science,3,Ritu Verma,r.verma@example.com
