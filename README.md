@@ -232,34 +232,6 @@ http://localhost:5173
 
 ---
 
-## ⚠️ Common Issues
-
-### ❌ Module not found
-
-Install missing module:
-
-```bash
-python -m pip install <module-name>
-```
-
-### ❌ Backend not responding
-
-Ensure FastAPI is running:
-
-```bash
-uvicorn main:app --reload
-```
-
-### ❌ Frontend API error
-
-Ensure frontend API URL points to:
-
-```
-http://localhost:8000
-```
-
----
-
 ## 📌 Future Enhancements
 
 * Interactive dashboards
@@ -269,6 +241,17 @@ http://localhost:8000
 * Cloud deployment
 
 ---
+7. Screenshots
+
+Figure 1: Application Home Page
+
+
+Figure 2: Dataset Upload Interface
+[ screenshot ]
+
+Figure 3: Student Risk Analysis Results
+[ screenshot ]
+
 
 ## 👨‍💻 Author
 
