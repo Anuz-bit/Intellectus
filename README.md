@@ -241,17 +241,29 @@ http://localhost:5173
 * Cloud deployment
 
 ---
-7. Screenshots
+Screenshots
 
-Figure 1: Application Home Page
+## 📸 Screenshots
 
+### Figure 1: Application Home Page & Dataset Upload Interface
+![Home Page](asset/Home%20Page%20%26%20Dataset%20Upload%20Interface.png)
 
-Figure 2: Dataset Upload Interface
-[ screenshot ]
+---
 
-Figure 3: Student Risk Analysis Results
-[ screenshot ]
+### Figure 2: Dashboard with Risk Distribution
+![Dashboard](asset/Dashboard%20with%20Risk%20Distribution.png)
 
+---
+
+### Figure 3: Student Risk Overview Table
+![Student Risk Table](asset/Student%20Risk%20Overview%20Table.png)
+
+---
+
+### Figure 4: Individual Student Risk Detail View
+![Student Detail](asset/Individual%20Student%20Risk%20Detail%20View.png)
+
+---
 
 ## 👨‍💻 Author
 
