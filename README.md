@@ -71,42 +71,26 @@ Intellectus/
 │
 └── README.md
 ```
-
 ---
+## 🌐 Live Demo
 
-## 🔌 API Documentation
+Frontend UI is deployed using GitHub Pages:
 
-### **POST /analyze**
+🔗 https://Anuz-bit.github.io/Intellectus
 
-**Description:**
-Accepts uploaded datasets and returns student risk prediction results.
-
-**Request Type:**
-`multipart/form-data`
-
-**Required Files:**
-
-* `students_file` → `.xlsx`
-* `academic_records` → `.csv`
-* `activity_records` → `.csv`
-
-**Sample Response:**
-
-```json
-{
-  "success": true,
-  "data": [
-    {
-      "student_id": "S101",
-      "risk_level": "High"
-    }
-  ]
-}
-```
+> Note:  
+> The live demo showcases the frontend interface.  
+> The FastAPI + Machine Learning backend is designed to run locally and is documented below.
 
 ---
 
 ## 🚀 How to Run the Project (Step-by-Step)
+
+### Backend (Local Execution)
+
+The backend includes a FastAPI server and a trained ML model.
+Due to GitHub Pages limitations (static hosting), the backend is intended to be run locally.
+
 
 ### ✅ Prerequisites
 
