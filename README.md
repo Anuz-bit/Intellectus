@@ -1,113 +1,81 @@
-# 📊 Intellectus – Student Risk Analysis System
-## 🌐 Live Demo
+# Intellectus — Student Risk Analysis System 📊🎓
 
-🔗 https://Anuz-bit.github.io/Intellectus
+[![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-blue)](#tech-stack)
+[![Backend](https://img.shields.io/badge/Backend-FastAPI-success)](#tech-stack)
+[![ML](https://img.shields.io/badge/ML-scikit--learn-orange)](#tech-stack)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen)](#)
+[![Live Demo](https://img.shields.io/badge/Demo-GitHub%20Pages-black)](https://anuz-bit.github.io/Intellectus/)
 
-> Note:  
-> The live demo showcases the frontend UI deployed via GitHub Pages.  
-> The FastAPI + Machine Learning backend is designed for local execution and is fully documented in this repository.
----
-Intellectus is a **student risk analysis web application** that helps educational institutions identify **at-risk students early** using academic and activity data.
-
-The system uses **Machine Learning** to analyze uploaded datasets and provides insights that can support **timely academic interventions**.
+A hackathon-ready prototype for **early student risk detection** that combines spreadsheet data, rule-based analytics, and explainable machine learning to help institutions identify **at-risk students** and enable timely interventions.  
+Frontend is deployed on GitHub Pages; the FastAPI + ML backend runs locally. :contentReference[oaicite:1]{index=1}
 
 ---
 
-## 🎯 Project Objective
+## 🌐 UI Preview (GitHub Pages)
 
-To proactively identify students who may be at academic risk by analyzing:
+🔗 https://anuz-bit.github.io/Intellectus/
 
-* Student information
-* Academic performance
-* Activity records
-
-This helps teachers and administrators take action **before performance drops further**.
+> **Heads-up:** This is a **frontend-only preview**.  
+> The **FastAPI + ML backend runs locally** (see **Run Locally** section).
 
 ---
 
 ## ✨ Features
 
-* Upload multiple student datasets
-* Machine Learning-based risk prediction
-* Fast and scalable backend using FastAPI
-* Modern and responsive frontend
-* Simple and clean user interface
-* Easy to run locally
+- Upload multiple student datasets
+- Machine Learning-based risk prediction
+- Fast, scalable backend using FastAPI
+- Modern, responsive UI
+- Simple and clean interface
+- Easy to run locally :contentReference[oaicite:4]{index=4}
 
 ---
 
-## 🛠 Tech Stack
+## 🧱 Tech Stack
 
-### Frontend
+**Frontend**
+- React (Vite)
+- Tailwind CSS
+- JavaScript :contentReference[oaicite:5]{index=5}
 
-* React (Vite)
-* Tailwind CSS
-* JavaScript
+**Backend**
+- Python
+- FastAPI :contentReference[oaicite:6]{index=6}
 
-### Backend
-
-* Python
-* FastAPI
-
-### Machine Learning
-
-* Pandas
-* NumPy
-* Scikit-learn
-* Joblib
+**Machine Learning**
+- Pandas, NumPy
+- scikit-learn
+- Joblib :contentReference[oaicite:7]{index=7}
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 Intellectus/
-│
+├── asset/                         # Screenshots used in README
 ├── backend/
-│   ├── venv/                      # Python virtual environment
 │   ├── main.py                    # FastAPI backend & ML logic
 │   ├── train_model.py             # Model training script
 │   ├── student_risk_model.joblib  # Trained ML model
 │   ├── feature_names.joblib
 │   ├── fee_status_encoder.joblib
-│
-├── frontend/
-│   ├── src/                       # React source code
-│   ├── public/
-│   ├── package.json
-│
-└── README.md
-```
----
-## 🌐 Live Demo
-
-Frontend UI is deployed using GitHub Pages:
-
-🔗 https://Anuz-bit.github.io/Intellectus
-
-> Note:  
-> The live demo showcases the frontend interface.  
-> The FastAPI + Machine Learning backend is designed to run locally and is documented below.
+│   └── venv/                      # Local virtual environment (do not commit)
+└── frontend/
+    ├── src/                       # React source code
+    ├── public/
+    └── package.json
+````
 
 ---
 
-## 🚀 How to Run the Project (Step-by-Step)
+## ✅ Prerequisites
 
-### Backend (Local Execution)
-
-The backend includes a FastAPI server and a trained ML model.
-Due to GitHub Pages limitations (static hosting), the backend is intended to be run locally.
-
-
-### ✅ Prerequisites
-
-Make sure the following are installed:
-
-* Python 3.9 or higher
-* Node.js (v18+)
+* Python **3.9+**
+* Node.js **18+**
 * npm
 
-Check versions:
+Verify installations:
 
 ```bash
 python --version
@@ -117,30 +85,25 @@ npm --version
 
 ---
 
-## 🔹 Step 1: Clone the Repository
+## 🚀 Run Locally (Step-by-Step)
+
+### 1) Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Anuz-bit/Intellectus.git
 cd Intellectus
 ```
 
 ---
 
-## 🔹 Step 2: Backend Setup (FastAPI)
-
-### 1️⃣ Go to backend folder
+### 2) Backend (FastAPI + ML)
 
 ```bash
 cd backend
-```
-
-### 2️⃣ Create virtual environment
-
-```bash
 python -m venv venv
 ```
 
-### 3️⃣ Activate virtual environment
+Activate the virtual environment:
 
 **Windows**
 
@@ -148,112 +111,127 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-You should see `(venv)` in terminal.
+**macOS/Linux**
 
----
+```bash
+source venv/bin/activate
+```
 
-### 4️⃣ Install backend dependencies
+Install dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-If `requirements.txt` is not present, install manually:
+> If `requirements.txt` is missing, install manually:
 
 ```bash
 python -m pip install pandas numpy scikit-learn joblib fastapi uvicorn python-multipart openpyxl
 ```
 
----
-
-### 5️⃣ Run backend server
+Start the backend server:
 
 ```bash
 uvicorn main:app --reload
 ```
 
-Backend will start at:
+Backend runs at:
 
-```
-http://127.0.0.1:8000
-```
+* [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+API docs (if enabled):
+
+* [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ---
 
-## 🔹 Step 3: Frontend Setup (React)
+### 3) Frontend (React + Vite)
 
-Open a **new terminal**.
-
-### 1️⃣ Go to frontend folder
+Open a **new terminal**:
 
 ```bash
 cd frontend
-```
-
-### 2️⃣ Install frontend dependencies
-
-```bash
 npm install
-```
-
-### 3️⃣ Start frontend
-
-```bash
 npm run dev
 ```
 
-Frontend will run at:
+Frontend runs at:
 
-```
-http://localhost:5173
-```
+* [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🔹 Step 4: Use the Application
+## 🧪 Usage
 
-1. Open browser → `http://localhost:5173`
-2. Upload:
+1. Open the app: `http://localhost:5173`
+2. Upload the datasets:
 
    * `students.xlsx`
    * `academic_records.csv`
    * `activity_records.csv`
 3. Click **Analyze Data**
-4. View student risk analysis results
+4. Review results in:
+
+   * Risk distribution dashboard
+   * Student risk overview table
+   * Individual student detail view ([GitHub][1])
+
+> Tip: If you provide sample datasets in the repo later, link them here (e.g., `data/` folder) to make onboarding faster.
 
 ---
 
-## 📌 Future Enhancements
+## 🖼️ Screenshots
+
+| Home / Upload           | Dashboard                         |
+| ----------------------- | --------------------------------- |
+| ![Home](asset/home.png) | ![Dashboard](asset/dashboard.png) |
+
+| Risk Table                          | Student Detail                              |
+| ----------------------------------- | ------------------------------------------- |
+| ![Risk Table](asset/risk_table.png) | ![Student Detail](asset/student_detail.png) |
+
+---
+
+## 🛣️ Roadmap
+
+Planned improvements:
 
 * Interactive dashboards
-* Authentication (Admin / Teacher login)
+* Authentication (Admin / Teacher)
 * Database integration
 * Automated alerts
-* Cloud deployment
-
----
-Screenshots
-
-## 📸 Screenshots
-
-### Figure 1: Application Home Page & Dataset Upload Interface
-![Home Page](asset/home.png)
+* Cloud deployment ([GitHub][1])
 
 ---
 
-### Figure 2: Dashboard with Risk Distribution
-![Dashboard](asset/dashboard.png)
+## 🤝 Contributing
 
----
+Contributions are welcome!
 
-### Figure 3: Student Risk Overview Table
-![Student Risk Table](asset/risk_table.png)
+1. Fork the repo
+2. Create a feature branch:
 
----
+   ```bash
+   git checkout -b feat/your-feature
+   ```
+3. Commit your changes:
 
-### Figure 4: Individual Student Risk Detail View
-![Student Detail](asset/student_detail.png)
+   ```bash
+   git commit -m "Add: your feature"
+   ```
+4. Push the branch:
 
+   ```bash
+   git push origin feat/your-feature
+   ```
+5. Open a Pull Request
+
+### Development guidelines
+
+* Keep PRs focused and small
+* Update docs when behavior changes
+* Prefer readable code + clear naming
+* Add minimal validation for uploaded files (schema/columns) where applicable
 ---
 
 ## 👨‍💻 Author
@@ -261,3 +239,4 @@ Screenshots
 **Anuj Wankhede**
 B.Tech Student | Machine Learning & Data Analytics Enthusiast
 
+[1]: https://github.com/Anuz-bit/Intellectus "GitHub - Anuz-bit/Intellectus: A hackathon-ready prototype for early student risk detection that combines spreadsheet data, rule-based analytics, and explainable machine learning to prevent dropouts through timely intervention and low-cost implementation."
